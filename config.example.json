@@ -1,0 +1,22 @@
+[
+  {
+    "name": "your-custom-id",
+    "command": "docker",
+    "args": ["build", "-t", "some-docker-tag", "."],
+    "environment": [
+      "ARG1=val1"
+    ],
+    "workingDirectory": "/a/path",
+    "timeout": 0
+  },
+  {
+    "name": "your-custom-id2",
+    "command": "docker",
+    "args": ["build", "-t", "some-docker-tag", "."],
+    "environment": [
+      "ARG1=val1"
+    ],
+    "workingDirectory": "/a/path",
+    "timeout": 5
+  }
+]
