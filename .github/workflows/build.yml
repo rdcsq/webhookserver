@@ -26,10 +26,9 @@ jobs:
           go-version: "^1.23.3"
 
       - name: Install dependencies
-        run: |
-          go get .
+        run: go get .
 
-     - name: Build
+      - name: Build
         run: |
           GOOS=linux GOARCH=amd64 go build -o webhookserver_linux_amd64
           GOOS=linux GOARCH=arm64 go build -o webhookserver_linux_arm64
