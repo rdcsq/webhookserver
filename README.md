@@ -26,7 +26,7 @@ go run main.go jwt \
 ```
 
 ```sh
-./webhookserver --name something-that-identifies-this [--time nSeconds]
+./webhookserver jwt --name something-that-identifies-this [--time nSeconds]
 ```
 
 - do HTTP POST requests to `{url}/execute/{id of the job you want to execute}`
